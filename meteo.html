@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Application Meteo</title>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 my-3">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <button type="submit" class="btn btn-info btn-block">
+                        Rechercher
+                    </button>
+                </form>
+            </div>
+            <div class="col-12 col-sm-6 d-flex justify-content-center my-3">
+                <div class="box-container">
+                    <div id="city" class="box"></div>
+                    <div id="temp" class="box"></div>
+                    <div id="humidity" class="box"></div>
+                    <div id="description" class="box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
